@@ -1,0 +1,98 @@
+body {
+    background-color: #E5F3FB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.panel {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 90%;
+    max-width: 400px;
+}
+
+.panelHeader {
+    background-color: #009EFF;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+}
+
+.panelHeader h1 {
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 550;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.panelForm {
+    padding: 20px;
+}
+
+.clr .ipt-ctl::placeholder {
+    font-size: 15px;
+    color: #00568A;
+}
+.clr > .ipt-ctl {
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: none;
+    border-bottom: 1px solid #D9D9D9;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    color: #4C4C6D;
+}
+
+.btn .button {
+    font-weight: bold;
+    background-color: #00568A;
+    border: none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    height: 45px;
+    min-height: 35px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.ipt-ctl:focus {
+    outline: none;
+    background-color: #E5F3FB;
+}
+
+.button:hover {
+    background-color: #54B435;
+}
+
+.clr .clr-red {
+    color: red !important;
+}
+
+.clr .clr-red > .ipt-ctl {
+    border-color: red !important;
+    color: red !important;
+}
+
+.btn .btn-error .button {
+    background-color: red;
+    color: #FFFFFF;
+    border-color: red;
+}
+
+@media screen and (max-width: 600px) {
+    .panel {
+        width: 95%;
+        max-width: none;
+    }
+}
